@@ -3,4 +3,16 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <!-- main -->
+    <color name="btnvisit">#e49a41</color>
+    <color name="btnwork">#7a9e9a</color>
+    <color name="btnorder">#5a5959</color>
+    <color name="btntimekeeping">#b285dc</color>
+    <color name="checkin">#9f5416</color>
+    <color name="btnmonitoring">#de4c74</color>
+    <color name="green">#08ab10</color>
+    <color name="blue">#58c8f1</color>
+    <color name="tran">#00000000</color>
+    <color name="bg_text_decript_fab">#b0050303</color>
+    <color name="text_decript_fab">#ffffff</color>
 </resources>

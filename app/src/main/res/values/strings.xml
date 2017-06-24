@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">AndroidDMS</string>
+    <!-- main activity-->
+    <string name="viengtham">Viếng thăm</string>
+    <string name="chamcong">Chấm công</string>
+    <string name="congviec">Công việc</string>
+    <string name="giamsat">Giám sát</string>
+    <string name="checkin">Check-in</string>
+    <string name="donhang">Đơn hàng</string>
+    <string name="tongdai">Tổng đài hỗ trợ: </string>
+    <string name="chaomung">Chào mừng đến với Android DMS</string>
+    <string name="xinchao">Xin chào</string>
+    <!-- tittle -->
+    <string name="trangchu">Trang chủ</string>
+    <!-- tham quan -->
+    <string name="searchint">tìm kiếm</string>
 </resources>

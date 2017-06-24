@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- title -->
+    <dimen name="textsizetitle">40sp</dimen>
+    <!-- main -->
+    <dimen name="textsizewelcome">35sp</dimen>
+    <dimen name="textsizebutton">30sp</dimen>
+    <dimen name="widthandheighticonsettingtitle">50dp</dimen>
+    <dimen name="widthandheighticonlisttitle">40dp</dimen>
+</resources>
