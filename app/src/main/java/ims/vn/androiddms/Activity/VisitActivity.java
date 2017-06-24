@@ -1,4 +1,4 @@
-package ims.vn.androiddms;
+package ims.vn.androiddms.Activity;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -13,6 +13,7 @@ import android.view.WindowManager;
 import java.util.ArrayList;
 
 import ims.vn.androiddms.Adapter.VisitAdapter;
+import ims.vn.androiddms.R;
 import ims.vn.androiddms.model.Visit;
 
 public class VisitActivity extends AppCompatActivity {
@@ -26,7 +27,11 @@ public class VisitActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_visit);
+
         this.getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         recyclerView = (RecyclerView) findViewById(R.id.rcVisit);
@@ -45,8 +50,8 @@ public class VisitActivity extends AppCompatActivity {
         dialogVisit.setContentView(R.layout.dialog_visit);
         dialogVisit.getWindow().getAttributes().verticalMargin = 1F;
         dialogVisit.getWindow().getAttributes().horizontalMargin = 1F;
-
         floatActionButton();
+
     }
 
     public void floatActionButton(){

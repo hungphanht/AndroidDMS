@@ -14,4 +14,8 @@
     <string name="trangchu">Trang chủ</string>
     <!-- tham quan -->
     <string name="searchint">tìm kiếm</string>
+    <string name="order">Đặt hàng</string>
+    <string name="seller">Bán hàng</string>
+    <string name="debt">Công nợ</string>
+
 </resources>

@@ -1,4 +1,4 @@
-package ims.vn.androiddms;
+package ims.vn.androiddms.Activity;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -11,6 +11,7 @@ import android.view.WindowManager;
 import java.util.ArrayList;
 
 import ims.vn.androiddms.Adapter.ProductAdapter;
+import ims.vn.androiddms.R;
 import ims.vn.androiddms.model.Product;
 
 public class ProductActivity extends AppCompatActivity {

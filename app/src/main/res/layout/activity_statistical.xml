@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.1"
-        android:background="@color/btnvisit"
+        android:background="@color/backround_header"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -172,8 +172,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:tabGravity="fill"
-                app:tabIndicatorColor="@android:color/transparent"
-                app:tabMode="fixed" />
+                app:tabIndicatorColor="#FF0C0C"
+                app:tabMode="fixed"
+                app:tabIndicatorHeight="3dp"
+                app:tabTextColor="#0A0A0A"
+                app:tabSelectedTextColor="#0A0A0A"
+                />
         </LinearLayout>
     </LinearLayout>
 

@@ -7,7 +7,7 @@
     android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp"
     android:layout_marginTop="5dp"
-    android:background="#ffffff"
+    android:background="#fff"
     android:orientation="vertical"
     tools:context="ims.vn.androiddms.MainActivity">
 
@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.5"
-        android:background="#cecdcd"
+        android:background="@color/green"
         android:orientation="vertical">
 
         <LinearLayout
@@ -168,6 +168,7 @@
                 android:gravity="center|left">
 
                 <TextView
+                    android:id="@+id/viewnote"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Xem ghi chú"
@@ -199,6 +200,7 @@
                 android:gravity="center|left">
 
                 <TextView
+                    android:id="@+id/viewStatistical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="xem thống kê"
@@ -211,7 +213,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.3"
-        android:background="@drawable/bordertop">
+        android:background="@drawable/backroundstatistical">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -221,11 +223,13 @@
             android:gravity="center|left">
 
             <LinearLayout
+
                 android:layout_width="100dp"
                 android:layout_height="35dp"
                 android:background="@drawable/button_green">
 
                 <LinearLayout
+                    android:id="@+id/btnOrder"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="?attr/selectableItemBackgroundBorderless"
@@ -264,14 +268,17 @@
             android:layout_height="match_parent"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
+
             android:gravity="center|right">
 
             <LinearLayout
+
                 android:layout_width="100dp"
                 android:layout_height="35dp"
                 android:background="@drawable/button_blue">
 
                 <LinearLayout
+                    android:id="@+id/btnCheckin"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="?attr/selectableItemBackgroundBorderless"

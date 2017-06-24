@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import ims.vn.androiddms.Activity.VisitActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     LinearLayout btnViengTham;

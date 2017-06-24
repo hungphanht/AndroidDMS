@@ -19,7 +19,19 @@
         <activity
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:screenOrientation="portrait"
-            android:name=".VisitActivity"/>
+            android:name=".Activity.VisitActivity"/>
+        <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait"
+            android:name=".Activity.StatisticalActivity"/>
+        <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait"
+            android:name=".Activity.ProductActivity"/>
+        <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait"
+            android:name=".Activity.OrderActivity"/>
     </application>
 
 </manifest>
