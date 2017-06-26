@@ -1,6 +1,7 @@
 package ims.vn.androiddms.Activity;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -9,15 +10,18 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
 import ims.vn.androiddms.Adapter.VisitAdapter;
+import ims.vn.androiddms.MainActivity;
 import ims.vn.androiddms.R;
 import ims.vn.androiddms.model.Visit;
 
 public class VisitActivity extends AppCompatActivity {
 
+    ImageView imgvBack;
     RecyclerView recyclerView;
     VisitAdapter adapter;
     Dialog dialogVisit;
@@ -50,8 +54,26 @@ public class VisitActivity extends AppCompatActivity {
         dialogVisit.setContentView(R.layout.dialog_visit);
         dialogVisit.getWindow().getAttributes().verticalMargin = 1F;
         dialogVisit.getWindow().getAttributes().horizontalMargin = 1F;
+
+        imgvBack = (ImageView) findViewById(R.id.btnBack);
+        imgvBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(VisitActivity.this,MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         floatActionButton();
 
+    }
+
+    public void onBackPressed(){
+        finish();
+    }
+    public void onSuperBackPressed(){
+        super.onBackPressed();
     }
 
     public void floatActionButton(){

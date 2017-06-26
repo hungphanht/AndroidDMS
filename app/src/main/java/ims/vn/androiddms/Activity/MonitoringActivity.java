@@ -11,47 +11,42 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 
 import ims.vn.androiddms.Adapter.PaperAdapter;
-import ims.vn.androiddms.Fragment.DebtFragment;
-import ims.vn.androiddms.Fragment.OrderFragment;
-import ims.vn.androiddms.Fragment.SellFragment;
+import ims.vn.androiddms.Fragment.MapFragment;
+import ims.vn.androiddms.Fragment.StaffFragment;
+import ims.vn.androiddms.MainActivity;
 import ims.vn.androiddms.R;
 
-public class StatisticalActivity extends FragmentActivity {
+public class MonitoringActivity extends FragmentActivity {
     PaperAdapter paperAdapter;
     private TabLayout tabLayout;
     private ViewPager viewPager;
     ImageView imgvBack;
-
-    //    private int requesetDirect;
+//    private int requesetDirect;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_statistical);
+        setContentView(R.layout.activity_monitoring);
         addControls();
         addEvents();
     }
-
     private void setupViewPager(ViewPager viewPager) {
         paperAdapter = new PaperAdapter(getSupportFragmentManager());
-        paperAdapter.addFragment(new DebtFragment());
-        paperAdapter.addFragment(new OrderFragment());
-        paperAdapter.addFragment(new SellFragment());
+        paperAdapter.addFragment(new StaffFragment());
+        paperAdapter.addFragment(new MapFragment());
         viewPager.setAdapter(paperAdapter);
 //        viewPager.setCurrentItem(1);
     }
-
     private void addControls() {
 
-        viewPager = (ViewPager) findViewById(R.id.vpPager);
+        viewPager = (ViewPager) findViewById(R.id.vpMonitoring);
         setupViewPager(viewPager);
 
-        tabLayout = (TabLayout) findViewById(R.id.main_tabs);
+        tabLayout = (TabLayout) findViewById(R.id.tab_Monitoring);
         tabLayout.setupWithViewPager(viewPager);
-        tabLayout.getTabAt(0).setText(R.string.order);
-        tabLayout.getTabAt(1).setText(R.string.seller);
-        tabLayout.getTabAt(2).setText(R.string.debt);
+        tabLayout.getTabAt(0).setText(R.string.danhsach);
+        tabLayout.getTabAt(1).setText(R.string.map);
     }
 
     private void addEvents() {
@@ -59,23 +54,18 @@ public class StatisticalActivity extends FragmentActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 int position = tab.getPosition();
-                if (position == 0) {
-                    tabLayout.getTabAt(0).setText(R.string.order);
+                if(position == 0){
+                    tabLayout.getTabAt(0).setText(R.string.danhsach);
                 }
-                if (position == 1) {
-                    tabLayout.getTabAt(1).setText(R.string.seller);
-                }
-                if (position == 2) {
-                    tabLayout.getTabAt(2).setText(R.string.debt);
-                    ;
+                if(position == 1){
+                    tabLayout.getTabAt(1).setText(R.string.map);
                 }
             }
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
-                tabLayout.getTabAt(0).setText(R.string.order);
-                tabLayout.getTabAt(1).setText(R.string.seller);
-                tabLayout.getTabAt(2).setText(R.string.debt);
+                tabLayout.getTabAt(0).setText(R.string.danhsach);
+                tabLayout.getTabAt(1).setText(R.string.map);
             }
 
             @Override
@@ -88,18 +78,17 @@ public class StatisticalActivity extends FragmentActivity {
         imgvBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(StatisticalActivity.this, VisitActivity.class);
+                Intent intent = new Intent(MonitoringActivity.this,MainActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
     }
 
-    public void onBackPressed() {
+    public void onBackPressed(){
         finish();
     }
-
-    public void onSuperBackPressed() {
+    public void onSuperBackPressed(){
         super.onBackPressed();
     }
 

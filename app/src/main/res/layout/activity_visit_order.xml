@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#dcdbdb"
+    android:background="@color/bg_list"
     android:orientation="vertical"
     tools:context="ims.vn.androiddms.MainActivity">
 
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.1"
-        android:background="@color/backround_header"
+        android:background="@color/text_green_visit"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -22,10 +22,12 @@
             android:gravity="center|left">
 
             <ImageView
+                android:id="@+id/btnBack"
                 android:layout_width="@dimen/widthandheighticonsettingtitle"
                 android:layout_height="@dimen/widthandheighticonsettingtitle"
                 android:src="@drawable/ic_back" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -58,7 +60,7 @@
         android:layout_height="0dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_weight="1"
+        android:layout_weight="1.2"
         android:orientation="vertical"
         android:weightSum="3.5">
 
@@ -79,17 +81,17 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:background="#348e8e8e"
+                    android:layout_weight="0.4"
+                    android:background="@color/bg_layout_visit_order"
                     android:gravity="center|left">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="5dp"
-                        android:text="Khách hàng"
-                        android:textColor="#000000"
-                        android:textSize="18dp"
+                        android:paddingLeft="@dimen/paddingleft_visit_order"
+                        android:text="@string/khachang"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -101,8 +103,9 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#00000000"
-                        android:textColorHint="#000000" />
+                        android:background="@color/tran"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -115,17 +118,17 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:background="#348e8e8e"
+                    android:layout_weight="0.4"
+                    android:background="@color/bg_layout_visit_order"
                     android:gravity="center|left">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="5dp"
-                        android:text="Người liên hệ"
-                        android:textColor="#000000"
-                        android:textSize="18sp"
+                        android:paddingLeft="@dimen/paddingleft_visit_order"
+                        android:text="@string/nguoilienhe"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -135,10 +138,12 @@
                     android:layout_weight="1">
 
                     <EditText
+                        android:id="@+id/editText3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#00000000"
-                        android:textColorHint="#000000" />
+                        android:background="@color/tran"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -150,17 +155,17 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:background="#348e8e8e"
+                    android:layout_weight="0.4"
+                    android:background="@color/bg_layout_visit_order"
                     android:gravity="center|left">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="5dp"
-                        android:text="Số điện thoại"
-                        android:textColor="#000000"
-                        android:textSize="18sp"
+                        android:paddingLeft="@dimen/paddingleft_visit_order"
+                        android:text="@string/sodienthoai"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -169,6 +174,12 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1">
 
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/tran"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -190,17 +201,18 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:background="#348e8e8e"
+                    android:layout_weight="0.4"
+                    android:background="@color/bg_layout_visit_order"
                     android:gravity="center|left">
 
                     <TextView
+                        android:id="@+id/textView6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="5dp"
-                        android:text="Ngày giao"
-                        android:textColor="#000000"
-                        android:textSize="18sp"
+                        android:paddingLeft="@dimen/paddingleft_visit_order"
+                        android:text="@string/ngaygiao"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -210,10 +222,12 @@
                     android:layout_weight="1">
 
                     <EditText
+                        android:id="@+id/editText4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#00000000"
-                        android:textColorHint="#000000" />
+                        android:background="@color/tran"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -225,17 +239,17 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:background="#348e8e8e"
+                    android:layout_weight="0.4"
+                    android:background="@color/bg_layout_visit_order"
                     android:gravity="center|left">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="5dp"
-                        android:text="Tên khách trả"
-                        android:textColor="#000000"
-                        android:textSize="18sp"
+                        android:paddingLeft="@dimen/paddingleft_visit_order"
+                        android:text="@string/tenkhacktra"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -247,8 +261,9 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#00000000"
-                        android:textColorHint="#000000" />
+                        android:background="@color/tran"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -270,17 +285,18 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:background="#348e8e8e"
+                    android:layout_weight="0.4"
+                    android:background="@color/bg_layout_visit_order"
                     android:gravity="center|left">
 
                     <TextView
+                        android:id="@+id/textView5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="5dp"
-                        android:text="Loại đơn hàng"
-                        android:textColor="#000000"
-                        android:textSize="18sp"
+                        android:paddingLeft="@dimen/paddingleft_visit_order"
+                        android:text="@string/loaidon"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -288,33 +304,32 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="0dp"
+                    <RadioGroup
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.7">
+                        android:gravity="center"
+                        android:orientation="horizontal">
 
                         <RadioButton
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:checked="false"
-                            android:text="Đặt hàng"
-                            android:textColor="#000000" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/marginleftandright"
+                            android:buttonTint="@color/blue"
+                            android:text="@string/dathang"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textsize_visit_order" />
 
                         <RadioButton
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:checked="true"
-                            android:text="Bán hàng theo xe"
-                            android:textColor="#000000" />
-                    </LinearLayout>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/blue"
+                            android:text="@string/banhangtheoxe"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textsize_visit_order" />
+                    </RadioGroup>
                 </LinearLayout>
             </LinearLayout>
 
@@ -326,48 +341,54 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:background="#348e8e8e"
+                    android:layout_weight="0.4"
+                    android:background="@color/bg_layout_visit_order"
                     android:gravity="center|left">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="5dp"
-                        android:text="Kho xuất"
-                        android:textColor="#000000"
-                        android:textSize="18sp"
+                        android:paddingLeft="@dimen/paddingleft_visit_order"
+                        android:text="@string/khoxuat"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order"
                         android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/btnShowdialog"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
                     android:orientation="horizontal">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
 
-                        <Spinner
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_centerVertical="true"
-                            android:layout_gravity="center"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:spinnerMode="dropdown" />
-
-                        <ImageView
-                            android:layout_marginRight="10dp"
+                        <TextView
+                            android:id="@+id/txtShowKho"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:layout_gravity="center"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
                             android:src="@drawable/ic_drop_down" />
-                    </RelativeLayout>
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -380,17 +401,17 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:background="#348e8e8e"
+                    android:layout_weight="0.4"
+                    android:background="@color/bg_layout_visit_order"
                     android:gravity="center|left">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="5dp"
-                        android:text="Chiết khấu"
-                        android:textColor="#000000"
-                        android:textSize="18sp"
+                        android:paddingLeft="@dimen/paddingleft_visit_order"
+                        android:text="@string/chietkhau"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -398,11 +419,13 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1">
+
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#00000000"
-                        android:textColorHint="#000000" />
+                        android:background="@color/tran"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -418,17 +441,17 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:background="#348e8e8e"
+                android:layout_weight="0.4"
+                android:background="@color/bg_layout_visit_order"
                 android:gravity="center|left">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="5dp"
-                    android:text="Ghi chú"
-                    android:textColor="#000000"
-                    android:textSize="18sp"
+                    android:paddingLeft="@dimen/paddingleft_visit_order"
+                    android:text="@string/ghichu"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_visit_order"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -436,11 +459,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1">
+
                 <EditText
+                    android:id="@+id/editText2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#00000000"
-                    android:textColorHint="#000000" />
+                    android:background="@color/tran"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_visit_order" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -455,99 +481,126 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_weight="1">
 
             <LinearLayout
+                android:id="@+id/btnThemsp"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginTop="5dp"
-                android:layout_weight="1"
-                android:gravity="center">
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:orientation="vertical">
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic__visit_list" />
-            </LinearLayout>
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.8"
-                android:gravity="center">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic__visit_list" />
+                </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Thêm sản phẩm"
-                    android:textColor="#000000" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:gravity="center">
+
+                    <TextView
+                        android:textSize="@dimen/textsize_visit_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/themsp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_weight="1">
 
             <LinearLayout
+                android:id="@+id/btnKhuyenMai"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginTop="5dp"
-                android:layout_weight="1"
-                android:gravity="center">
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:orientation="vertical">
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_tag_black_shape" />
-            </LinearLayout>
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.8"
-                android:gravity="center">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_tag_black_shape" />
+                </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Khuyến mãi"
-                    android:textColor="#000000" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:gravity="center">
+
+                    <TextView
+                        android:textSize="@dimen/textsize_visit_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/khuyenmai"
+                        android:textColor="@color/black" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_weight="1">
 
             <LinearLayout
+                android:id="@+id/btnCapNhat"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginTop="5dp"
-                android:layout_weight="1"
-                android:gravity="center">
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:orientation="vertical">
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_download" />
-            </LinearLayout>
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.8"
-                android:gravity="center">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_download" />
+                </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Cập nhật"
-                    android:textColor="#000000" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:gravity="center">
+
+                    <TextView
+                        android:textSize="@dimen/textsize_visit_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/capnhat"
+                        android:textColor="@color/black" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

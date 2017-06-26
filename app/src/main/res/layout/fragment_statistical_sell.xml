@@ -5,24 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#dcdbdb"
+    android:background="@color/bg_list"
     tools:context="ims.vn.androiddms.MainActivity">
     <LinearLayout
-        android:background="#8c8057"
+        android:background="@color/header_list_statistical"
         android:orientation="horizontal"
         android:layout_weight="0.2"
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <LinearLayout
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="@dimen/marginleftandright"
             android:gravity="center|left"
             android:layout_weight="0.9"
             android:layout_width="0dp"
             android:layout_height="match_parent">
             <TextView
+                android:textSize="@dimen/textsize_statistical"
                 android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="Thời gian"
+                android:textColor="@color/black"
+                android:text="@string/thoigian"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -32,23 +33,28 @@
             android:layout_width="0dp"
             android:layout_height="match_parent">
             <TextView
+                android:textSize="@dimen/textsize_statistical"
                 android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="Nội dung"
+                android:textColor="@color/black"
+                android:text="@string/noidung"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout
-            android:gravity="center"
+            android:gravity="center|right"
+            android:layout_marginRight="@dimen/marginleftandright"
             android:layout_weight="0.6"
             android:layout_width="0dp"
             android:layout_height="match_parent">
+
             <TextView
-                android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="Số tiền"
+                android:id="@+id/textView10"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/sotien"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_statistical"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -61,7 +67,7 @@
             android:layout_height="match_parent"/>
     </LinearLayout>
     <LinearLayout
-        android:background="#e2c974"
+        android:background="@color/footer_list_statistical"
         android:layout_weight="0.2"
         android:layout_width="match_parent"
         android:layout_height="0dp">
@@ -72,9 +78,10 @@
             android:layout_width="0dp"
             android:layout_height="match_parent">
             <TextView
+                android:textSize="@dimen/textsize_statistical"
                 android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="Tổng cộng"
+                android:textColor="@color/black"
+                android:text="@string/tongcong"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -84,9 +91,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent">
             <TextView
+                android:textSize="@dimen/textsize_statistical"
                 android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="dsdsdsds"
+                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -96,9 +103,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent">
             <TextView
+                android:textSize="@dimen/textsize_statistical"
                 android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="dddffd"
+                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>

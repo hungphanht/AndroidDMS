@@ -1,5 +1,6 @@
 package ims.vn.androiddms.Adapter;
 
+import android.support.v7.widget.AppCompatCheckBox;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,7 +22,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.Recycler
     @Override
     public RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View itemview = inflater.inflate(R.layout.item_recycle_add_product, parent, false);
+        View itemview = inflater.inflate(R.layout.item_recycle_product, parent, false);
         return new RecyclerViewHolder(itemview);
     }
 
@@ -39,9 +40,11 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.Recycler
     }
     public class RecyclerViewHolder extends RecyclerView.ViewHolder {
         TextView txtTenSp,txtGiaChan,txtGiaLe,txtTonChan,txtTonLe;
+        AppCompatCheckBox cbCheck;
 
         public RecyclerViewHolder(View itemView) {
             super(itemView);
+            cbCheck = (AppCompatCheckBox) itemView.findViewById(R.id.cbcheck);
             txtTenSp = (TextView) itemView.findViewById(R.id.txtTenSp);
             txtGiaChan = (TextView) itemView.findViewById(R.id.txtGiaChan);
             txtGiaLe = (TextView) itemView.findViewById(R.id.txtGiaLe);
