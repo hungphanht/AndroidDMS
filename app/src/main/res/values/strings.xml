@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">AndroidDMS</string>
+    <!-- login -->
+    <string name="login">Login</string>
+    <string name="btnlogin">login</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="create">Create</string>
+    <string name="anaccount">an account</string>
     <!-- main activity-->
     <string name="viengtham">Viếng thăm</string>
     <string name="chamcong">Chấm công</string>
@@ -28,7 +35,7 @@
     <string name="vitri">Vị trí</string>
     <string name="chupanh">Chụp ảnh</string>
     <string name="chupanhtitle">Hình thức chụp ảnh</string>
-
+    <string name="luubaocao">Lưu báo cáo</string>
     <!-- dialog giam sat -->
     <string name="sapxeptheokhoangcach">Sắp xếp theo khoảng cách</string>
     <string name="guidulieu">Gửi dữ liệu</string>

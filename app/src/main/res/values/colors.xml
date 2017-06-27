@@ -25,5 +25,8 @@
     <color name="text_color_list">#c1c1c1</color>
     <color name="text_green_visit">#08ab10</color>
     <color name="bg_layout_visit_order">#348e8e8e</color>
+    <color name="bg_login">#44ffffff</color>
+    <color name="bg_edittextlogin">#a6d1d1d1</color>
+    <color name="btnlogin">#f9e49a41</color>
 
 </resources>

@@ -30,6 +30,8 @@
     <dimen name="heightrcvisit">300dp</dimen>
     <dimen name="margin_rcvisit">8dp</dimen>
     <!-- item check in camera -->
+    <dimen name="widthbuttonstock_checkin">150dp</dimen>
+    <dimen name="widthbuttonstockthemsp_checkin">170dp</dimen>
     <dimen name="widthbutton_checkin">120dp</dimen>
     <dimen name="heightbutton_checkin">35dp</dimen>
 </resources>
