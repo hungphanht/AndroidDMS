@@ -103,7 +103,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/viengtham"
                             android:textColor="@color/green"
-                            android:textSize="@dimen/textsize_name" />
+                            android:textSize="@dimen/textsize_check" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -113,11 +113,12 @@
                         android:gravity="center">
 
                         <TextView
+                            android:id="@+id/textView13"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/donhang_monitor"
                             android:textColor="@color/green"
-                            android:textSize="@dimen/textsize_name" />
+                            android:textSize="@dimen/textsize_check" />
                     </LinearLayout>
                 </LinearLayout>
 
